@@ -1,0 +1,147 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Xmee | Login and Register Form Html Templates</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Fontawesome CSS -->
+	<link rel="stylesheet" href="css/fontawesome-all.min.css">
+	<!-- Flaticon CSS -->
+	<link rel="stylesheet" href="font/flaticon.css">
+	<!-- Google Web Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="style.css">
+
+	<style>
+		.highlight {
+			background-color: rgb(235, 235, 67, .5);
+		}
+	</style>
+</head>
+
+<body>
+	<!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+	<div id="preloader" class="preloader">
+		<div class='inner'>
+			<div class='line1'></div>
+			<div class='line2'></div>
+			<div class='line3'></div>
+		</div>
+	</div>
+	<div id="wrapper" class="wrapper">
+		<div class="fxt-template-animation fxt-template-layout4">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-12 fxt-bg-wrap">
+						<div class="fxt-bg-img" data-bg-image="img/reg.jpg">
+							<div class="fxt-header">
+								<div class="fxt-transformY-50 fxt-transition-delay-1">
+									<a href="login-4.html" class="fxt-logo"><img src="img/logo-4.png" alt="Logo"></a>
+								</div>
+								<div class="fxt-transformY-50 fxt-transition-delay-2">
+									<h1 data-name="title">Welcome To Our xmee</h1>
+								</div>
+								<div class="fxt-transformY-50 fxt-transition-delay-3">
+									<p data-name="subtitle">Most advance e-Registration system out there</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-12 fxt-bg-color">
+						<div class="fxt-content">
+							<div class="fxt-form">
+								<form method="POST">
+									<div class="form-group">
+										<label for="f_name" data-name="f_name" class="input-label">First Name</label>
+										<input type="text" id="f_name" class="form-control" name="f_name" placeholder="example name"
+											required="required">
+									</div>
+									<div class="form-group">
+										<label for="l_name" data-name="l_name" class="input-label">Last Name</label>
+										<input type="text" id="l_name" class="form-control" name="l_name" placeholder="example name"
+											required="required">
+									</div>
+									<div class="form-group">
+										<label for="email" data-name="email" class="input-label">Email Address</label>
+										<input type="email" id="email" class="form-control" name="email" placeholder="demo@gmail.com"
+											required="required">
+									</div>
+									<div class="form-group">
+										<label for="password" data-name="password" class="input-label">Password</label>
+										<input id="password" type="password" class="form-control" name="password" placeholder="********"
+											required="required">
+										<i toggle="#password" class="fa fa-fw fa-eye toggle-password field-icon"></i>
+									</div>
+									<!-- <div class="form-group">
+										<label for="c_password" data-name="confirm_pass" class="input-label">Confirm Password</label>
+										<input id="c_password" type="password" class="form-control" name="c_password" placeholder="********"
+											required="required">
+										<i toggle="#c_password" class="fa fa-fw fa-eye toggle-password field-icon"></i>
+									</div> -->
+									<!-- <div class="form-group">
+										<div class="fxt-checkbox-area">
+											<div class="checkbox">
+												<input id="checkbox1" type="checkbox">
+												<label for="checkbox1">I agree with the terms and condition</label>
+											</div>
+										</div>
+									</div> -->
+									<div class="form-group">
+										<button id="submit" type="submit" class="fxt-btn-fill">Register</button>
+									</div>
+								</form>
+							</div>
+							<div class="fxt-footer">
+								<p>Have an account?<a href="login-4.html" class="switcher-text2 inline-text">Log in</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="alan-btn"></div>
+	</div>
+
+	<script type="text/javascript" src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+	<script>
+		var alanBtnInstance = alanBtn({
+			key: "69a7b263386492aecd267566e94bc9ce2e956eca572e1d8b807a3e2338fdd0dc/stage",
+			onCommand: function ({command, value, field}) {
+				if (command === "highlight") {
+					handleHighlightLable(value)
+				}
+				if(command === "value") {
+					handleSetValue(field, value)
+				}
+				if(command === "submit") {
+					handleSubmit()
+				}
+			},
+			rootEl: document.getElementById("alan-btn"),
+		});
+	</script>
+	<!-- jquery-->
+	<script src="js/jquery-3.5.0.min.js"></script>
+	<!-- Bootstrap js -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Imagesloaded js -->
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<!-- Validator js -->
+	<script src="js/validator.min.js"></script>
+	<!-- Custom Js -->
+	<script src="js/main.js"></script>
+	<script src="./js/app.js"></script>
+</body>
+
+</html>
