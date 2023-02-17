@@ -3,12 +3,14 @@ const form = document.querySelector("form")
 function handleHighlightLable (value) {
   // Clear the class from any other element
   document.querySelectorAll(".highlight").forEach(element => {
-    element.classList.contains("highlight") &&  element.classList.remove("highlight")
+    element.classList.contains("highlight") && element.classList.remove("highlight")
   })
 
   // Get the element alan is reading and highlight
   const elem = document.querySelector(`[data-name=${value}]`);
   elem.classList.add("highlight");
+
+  elem.scrollIntoView()
 }
 
 function handleSetValue (label, value) {
